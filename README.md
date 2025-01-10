@@ -10,6 +10,31 @@ The solution is designed for publicly available gazette documents from the Belgi
 
 ---
 
+## Tools Used
+
+This solution leverages the following tools and libraries:
+
+-  Python: The programming language used to implement the solution.
+-  Tesseract OCR (pytesseract): Converts images in the PDFs to text.
+-  PDF to Image (pdf2image): Converts PDF pages into images for OCR processing.
+-  NLTK: Tokenises text into sentences and processes natural language.
+-  Langdetect: Detects the language of extracted text to ensure it aligns with supported languages (English, French, Dutch, German).
+-  Regular Expressions (re): Used to clean and extract patterns from text.
+-  JSON: Structures the output in a machine-readable format.
+
+---
+
+## Assumptions
+
+The solution assumes the following:
+
+- The input PDFs are legible and of sufficient quality for OCR processing.
+- The documents are in one of the supported languages: English, French, Dutch, or German.
+- The fields being extracted (e.g., "Company Name," "Company Identifier") follow predictable patterns or keywords as defined in the script.
+- All required dependencies (e.g., Tesseract OCR, poppler-utils) are correctly installed and configured by the user.
+- The user has configured the correct path to the Tesseract executable in the script.
+---
+
 ## Prerequisites
 
 1. **Python Version**:
